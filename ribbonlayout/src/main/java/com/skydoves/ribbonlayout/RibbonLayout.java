@@ -1,15 +1,3 @@
-package com.skydoves.ribbonlayout;
-
-import android.content.Context;
-import android.content.res.TypedArray;
-import android.graphics.Color;
-import android.graphics.Typeface;
-import android.graphics.drawable.GradientDrawable;
-import android.util.AttributeSet;
-import android.view.Gravity;
-import android.view.ViewGroup;
-import android.widget.RelativeLayout;
-import android.widget.TextView;
 
 /*
  * Copyright (C) 2017 battleent
@@ -26,6 +14,19 @@ import android.widget.TextView;
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
+
+package com.skydoves.ribbonlayout;
+
+import android.content.Context;
+import android.content.res.TypedArray;
+import android.graphics.Color;
+import android.graphics.Typeface;
+import android.graphics.drawable.GradientDrawable;
+import android.util.AttributeSet;
+import android.view.Gravity;
+import android.view.ViewGroup;
+import android.widget.RelativeLayout;
+import android.widget.TextView;
 
 public class RibbonLayout extends RelativeLayout {
 
@@ -185,7 +186,7 @@ public class RibbonLayout extends RelativeLayout {
         updateRibbons();
     }
 
-    public void setShow_bottom(boolean show) {
+    public void setShowBottom(boolean show) {
         this.show_bottom = show;
         updateRibbons();
     }

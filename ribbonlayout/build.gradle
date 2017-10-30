@@ -4,7 +4,7 @@ apply plugin: 'com.novoda.bintray-release'
 publish {
     userOrg = 'devmagician'
     groupId = 'com.github.skydoves'
-    artifactId = 'powermenu'
+    artifactId = 'ribbonlayout'
     publishVersion = '1.0.0'
     desc = 'This is an android layout library "RibbonLayout".'
     website = 'https://github.com/battleent/RibbonLayout'
@@ -20,6 +20,5 @@ android {
         targetSdkVersion 26
         versionCode 1
         versionName "1.0"
-        multiDexEnabled = true
     }
 }
