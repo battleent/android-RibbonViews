@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#AA00FF</color>
+    <color name="colorPrimaryDark">#7200CA</color>
+    <color name="colorPrimaryLight">#E254FF</color>
+    <color name="colorAccent">#AA00FF</color>
+    <color name="menuPrimary">#36aa00ff</color>
+    <color name="pale_magenta_90">#e5de63b3</color>
+    <color name="black_54">#89000000</color>
+    <color name="black_87">#dd000000</color>
+    <color name="warm_grey">#828282</color>
+</resources>

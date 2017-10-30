@@ -1,0 +1,225 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="15dp"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <android.support.v7.widget.CardView
+            android:id="@+id/card0"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:clipToPadding="false"
+            app:cardCornerRadius="3dp"
+            app:cardElevation="5dp">
+
+            <com.skydoves.ribbonlayout.RibbonLayout
+                android:layout_width="132dp"
+                android:layout_height="90dp"
+                app:header_text="New"
+                app:header_ribbonColor="@color/colorPrimary"
+                app:header_ribbonRadius="6"
+                app:header_padding="5"
+                app:bottom_text="Updated today"
+                app:bottom_ribbonColor="@color/pale_magenta_90"
+                app:bottom_padding="11">
+
+                <ImageView
+                    android:layout_width="132dp"
+                    android:layout_height="wrap_content"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/thumbnail0"/>
+
+            </com.skydoves.ribbonlayout.RibbonLayout>
+        </android.support.v7.widget.CardView>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingTop="10dp"
+            android:paddingLeft="12dp"
+            android:layout_marginRight="20dp"
+            android:layout_toRightOf="@+id/card0">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/item_webtoon_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="16sp"
+                    android:fontFamily="sans-serif-medium"
+                    android:textStyle="normal"
+                    android:textColor="@color/black_87"
+                    android:lineSpacingExtra="5sp"
+                    android:maxLines="2"
+                    android:ellipsize="end"
+                    android:text="Daily life of drifting"/>
+
+                <TextView
+                    android:id="@+id/item_webtoon_writer"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="12sp"
+                    android:fontFamily="sans-serif-medium"
+                    android:textStyle="normal"
+                    android:textColor="@color/black_54"
+                    android:lineSpacingExtra="8sp"
+                    android:layout_marginTop="1dp"
+                    android:maxLines="1"
+                    android:ellipsize="end"
+                    android:text="무명"/>
+
+                <TextView
+                    android:id="@+id/item_webtoon_genre"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="12sp"
+                    android:fontFamily="sans-serif"
+                    android:textStyle="normal"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:lineSpacingExtra="8sp"
+                    android:maxLines="1"
+                    android:ellipsize="end"
+                    android:text="daily life" />
+
+            </LinearLayout>
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp">
+
+        <android.support.v7.widget.CardView
+            android:id="@+id/card1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:clipToPadding="false"
+            app:cardCornerRadius="3dp"
+            app:cardElevation="5dp">
+
+            <com.skydoves.ribbonlayout.RibbonLayout
+                android:layout_width="132dp"
+                android:layout_height="90dp"
+                app:header_text="Rest"
+                app:header_ribbonColor="@color/warm_grey"
+                app:header_ribbonRadius="6"
+                app:header_padding="5"
+                app:bottom_text="Today is free"
+                app:bottom_ribbonColor="#e5c572d3"
+                app:bottom_padding="11">
+
+                <ImageView
+                    android:layout_width="132dp"
+                    android:layout_height="wrap_content"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/thumbnail0"/>
+
+            </com.skydoves.ribbonlayout.RibbonLayout>
+        </android.support.v7.widget.CardView>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingTop="10dp"
+            android:paddingLeft="12dp"
+            android:layout_marginRight="20dp"
+            android:layout_toRightOf="@+id/card1">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="16sp"
+                    android:fontFamily="sans-serif-medium"
+                    android:textStyle="normal"
+                    android:textColor="@color/black_87"
+                    android:lineSpacingExtra="5sp"
+                    android:maxLines="2"
+                    android:ellipsize="end"
+                    android:text="Daily life of drifting"/>
+
+                <TextView
+                    android:id="@+id/item_webtoon_writer2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="12sp"
+                    android:fontFamily="sans-serif-medium"
+                    android:textStyle="normal"
+                    android:textColor="@color/black_54"
+                    android:lineSpacingExtra="8sp"
+                    android:layout_marginTop="1dp"
+                    android:maxLines="1"
+                    android:ellipsize="end"
+                    android:text="무명"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="12sp"
+                    android:fontFamily="sans-serif"
+                    android:textStyle="normal"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:lineSpacingExtra="8sp"
+                    android:maxLines="1"
+                    android:ellipsize="end"
+                    android:text="daily life"/>
+
+            </LinearLayout>
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp">
+
+        <android.support.v7.widget.CardView
+            android:id="@+id/card2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:clipToPadding="false"
+            app:cardCornerRadius="3dp"
+            app:cardElevation="5dp"
+            android:layout_centerInParent="true">
+
+            <com.skydoves.ribbonlayout.RibbonLayout
+                android:layout_width="200dp"
+                android:layout_height="140dp"
+                app:header_text="New"
+                app:header_ribbonColor="#df1f76"
+                app:header_ribbonRadius="6"
+                app:header_textSize="15"
+                app:header_padding="8"
+                app:bottom_text="Today is free"
+                app:bottom_textSize="15"
+                app:bottom_ribbonColor="#e5c572d3"
+                app:bottom_padding="17">
+
+                <ImageView
+                    android:layout_width="200dp"
+                    android:layout_height="wrap_content"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/thumbnail0"/>
+
+            </com.skydoves.ribbonlayout.RibbonLayout>
+        </android.support.v7.widget.CardView>
+    </RelativeLayout>
+
+</LinearLayout>

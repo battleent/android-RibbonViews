@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="RibbonLayout">
+        <attr name="header_text" format="string"/>
+        <attr name="header_textSize" format="integer"/>
+        <attr name="header_textColor" format="color"/>
+        <attr name="header_ribbonColor" format="color"/>
+        <attr name="header_ribbonRadius" format="integer"/>
+        <attr name="header_padding" format="integer"/>
+        <attr name="show_header" format="boolean"/>
+
+        <attr name="bottom_text" format="string"/>
+        <attr name="bottom_textSize" format="integer"/>
+        <attr name="bottom_textColor" format="color"/>
+        <attr name="bottom_ribbonColor" format="color"/>
+        <attr name="bottom_height" format="integer"/>
+        <attr name="bottom_padding" format="integer"/>
+        <attr name="show_bottom" format="boolean"/>
+    </declare-styleable>
+</resources>
