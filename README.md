@@ -39,7 +39,7 @@ dependencies {
             </com.skydoves.ribbonlayout.RibbonLayout>
 ```
 
-#### Attributes
+## Attributes
 Parameter  |  Format  |  Default  |  Description
 --- | --- | --- | ---
 show_header | Boolean | true | set header ribbon's visibility
