@@ -1,7 +1,7 @@
 # RibbonLayout
 This is an android layout library "RibbonLayout".
 
-![screenshot](https://user-images.githubusercontent.com/24237865/32169434-c9eb2dae-bdb3-11e7-99e1-dbe27193ac84.jpg)
+![screenshot](https://user-images.githubusercontent.com/24237865/32170256-3d46b1f8-bdb7-11e7-99c9-b658f5ec27c5.png)
 
 ## Download
 #### Gradle
