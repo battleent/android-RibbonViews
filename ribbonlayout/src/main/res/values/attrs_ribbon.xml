@@ -17,4 +17,15 @@
         <attr name="bottom_padding" format="integer"/>
         <attr name="show_bottom" format="boolean"/>
     </declare-styleable>
+    <declare-styleable name="RibbonTag">
+        <attr name="tag_text" format="string"/>
+        <attr name="tag_textSize" format="integer"/>
+        <attr name="tag_textColor" format="color"/>
+        <attr name="tag_ribbonColor" format="color"/>
+        <attr name="tag_ribbonRadius" format="integer"/>
+        <attr name="tag_padding_left" format="integer"/>
+        <attr name="tag_padding_top" format="integer"/>
+        <attr name="tag_padding_right" format="integer"/>
+        <attr name="tag_padding_bottom" format="integer"/>
+    </declare-styleable>
 </resources>
