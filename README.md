@@ -1,13 +1,13 @@
 # RibbonLayout
 This is an android layout library "RibbonLayout" by [Battle Entertainment](https://www.battleent.com/)
 
-![screenshot](https://user-images.githubusercontent.com/24237865/32170256-3d46b1f8-bdb7-11e7-99c9-b658f5ec27c5.png)
+![screen](https://user-images.githubusercontent.com/24237865/32223750-fed78110-be81-11e7-8e2f-6732df6b756d.png)
 
 ## Download
 #### Gradle
 ```java
 dependencies {
-    compile 'com.github.skydoves:ribbonlayout:1.0.0'
+    compile 'com.github.skydoves:ribbonlayout:1.0.1'
 }
 ```
 
@@ -55,6 +55,22 @@ bottom_textSize | int | 10 | set bottom ribbin's textSize
 bottom_textColor | color | Color.White | set bottom ribbin's textColor
 bottom_height | int | -1 | set bottom ribbin's height
 bottom_padding | int | 3 | set bottom ribbon's paddings
+
+## RibbonTag
+```xml
+<com.skydoves.ribbonlayout.RibbonTag
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="sale event"
+                    android:layout_marginTop="3dp"
+                    app:tag_ribbonRadius="5"
+                    app:tag_padding_right="6dp"
+                    app:tag_padding_left="6dp"
+                    app:tag_ribbonColor="#cdda0b23"/>
+```
+
+## Version Log
+#### v1.0.1 - Updated RibbonTag
 
 # License
 ```xml
