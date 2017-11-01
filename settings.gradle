@@ -1,1 +1,1 @@
-include ':app', ':ribbonlayout'
+include ':app', ':ribbonviews'

@@ -15,12 +15,11 @@
  * limitations under the License.
  */
 
-package com.skydoves.ribbonlayout;
+package com.battleent.ribbonviews;
 
 import android.content.Context;
 import android.content.res.TypedArray;
 import android.graphics.Color;
-import android.graphics.Typeface;
 import android.graphics.drawable.GradientDrawable;
 import android.util.AttributeSet;
 import android.view.Gravity;

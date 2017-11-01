@@ -2,9 +2,9 @@ apply plugin: 'com.android.library'
 apply plugin: 'com.novoda.bintray-release'
 
 publish {
-    userOrg = 'devmagician'
-    groupId = 'com.github.skydoves'
-    artifactId = 'ribbonlayout'
+    userOrg = 'battleent'
+    groupId = 'com.github.battleent'
+    artifactId = 'RibbonViews'
     publishVersion = '1.0.1'
     desc = 'This is an android layout library "RibbonLayout".'
     website = 'https://github.com/battleent/RibbonLayout'

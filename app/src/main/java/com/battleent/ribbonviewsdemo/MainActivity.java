@@ -1,4 +1,4 @@
-package com.skydoves.ribbonlayoutdemo;
+package com.battleent.ribbonviewsdemo;
 
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
