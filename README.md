@@ -1,5 +1,5 @@
-# RibbonLayout
-This is an android layout library "RibbonLayout" by [Battle Entertainment](https://www.battleent.com/)
+# RibbonViews
+This is an android view library "RibbonViews" by [Battle Entertainment](https://www.battleent.com/)
 
 ![screen](https://user-images.githubusercontent.com/24237865/32223750-fed78110-be81-11e7-8e2f-6732df6b756d.png)
 
@@ -7,13 +7,13 @@ This is an android layout library "RibbonLayout" by [Battle Entertainment](https
 #### Gradle
 ```java
 dependencies {
-    compile 'com.github.skydoves:ribbonlayout:1.0.1'
+    compile 'com.github.battleent:RibbonViews:1.0.1'
 }
 ```
 
-## Usage
+## RibbonLayout
 ```xml
-<com.skydoves.ribbonlayout.RibbonLayout
+<com.battleent.ribbonviews.RibbonLayout
                 android:layout_width="132dp"
                 android:layout_height="90dp"
                 app:show_header="true" // default is true
@@ -58,7 +58,7 @@ bottom_padding | int | 3 | set bottom ribbon's paddings
 
 ## RibbonTag
 ```xml
-<com.skydoves.ribbonlayout.RibbonTag
+<com.battleent.ribbonviews.RibbonTag
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="sale event"
@@ -74,17 +74,25 @@ bottom_padding | int | 3 | set bottom ribbon's paddings
 
 # License
 ```xml
-Copyright 2017 battleent
+MIT License
 
-Licensed under the Apache License, Version 2.0 (the "License");
-you may not use this file except in compliance with the License.
-You may obtain a copy of the License at
+Copyright (c) 2017 Battle Entertainment
 
-   http://www.apache.org/licenses/LICENSE-2.0
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
 
-Unless required by applicable law or agreed to in writing, software
-distributed under the License is distributed on an "AS IS" BASIS,
-WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
-See the License for the specific language governing permissions and
-limitations under the License.
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.
 ```
