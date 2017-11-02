@@ -36,7 +36,7 @@ dependencies {
                     android:layout_height="wrap_content"
                     android:scaleType="fitXY"
                     android:src="@drawable/thumbnail0"/>
-            </com.skydoves.ribbonlayout.RibbonLayout>
+            </com.battleent.ribbonviews.RibbonLayout>
 ```
 
 ## Attributes
