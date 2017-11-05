@@ -1,7 +1,7 @@
 # RibbonViews
 This is an android view library "RibbonViews" by [Battle Entertainment](https://www.battleent.com/)
 
-![screenshot](https://user-images.githubusercontent.com/24237865/32412115-da959f6e-c230-11e7-8bc5-a69c91c84e8d.png)
+![screenshot](https://user-images.githubusercontent.com/24237865/32412131-874feaf2-c231-11e7-9567-92e10fc6856f.png)
 
 ## Download
 #### Gradle
