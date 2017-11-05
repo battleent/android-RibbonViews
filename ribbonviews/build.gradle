@@ -5,7 +5,7 @@ publish {
     userOrg = 'battleent'
     groupId = 'com.github.battleent'
     artifactId = 'RibbonViews'
-    publishVersion = '1.0.1'
+    publishVersion = '1.0.2'
     desc = 'This is an android layout library "RibbonLayout".'
     website = 'https://github.com/battleent/RibbonLayout'
     issueTracker = "${website}/issues"
@@ -21,4 +21,11 @@ android {
         versionCode 1
         versionName "1.0"
     }
+    lintOptions {
+        abortOnError false
+    }
+}
+
+dependencies {
+    implementation 'com.android.support:recyclerview-v7:24.2.0'
 }

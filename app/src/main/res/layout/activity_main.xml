@@ -82,15 +82,13 @@
                     android:ellipsize="end"
                     android:text="무명"/>
 
-                <com.battleent.ribbonviews.RibbonTag
+                <com.battleent.ribbonviews.RibbonTagListView
+                    android:id="@+id/ribbonTagListView"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="sale event"
                     android:layout_marginTop="3dp"
-                    app:tag_ribbonRadius="5"
-                    app:tag_padding_right="6dp"
-                    app:tag_padding_left="6dp"
-                    app:tag_ribbonColor="#cdda0b23"/>
+                    app:item_space="10"/>
+
             </LinearLayout>
         </RelativeLayout>
     </RelativeLayout>
@@ -178,7 +176,7 @@
                     app:tag_ribbonRadius="5"
                     app:tag_padding_right="6dp"
                     app:tag_padding_left="6dp"
-                    app:tag_ribbonColor="#dc0a8757"/>
+                    app:tag_ribbonColor="@color/free_event"/>
 
             </LinearLayout>
         </RelativeLayout>

@@ -8,7 +8,6 @@
         <attr name="header_ribbonRadius" format="integer"/>
         <attr name="header_padding" format="integer"/>
         <attr name="show_header" format="boolean"/>
-
         <attr name="bottom_text" format="string"/>
         <attr name="bottom_textSize" format="integer"/>
         <attr name="bottom_textColor" format="color"/>
@@ -26,5 +25,8 @@
         <attr name="tag_padding_top" format="dimension"/>
         <attr name="tag_padding_right" format="dimension"/>
         <attr name="tag_padding_bottom" format="dimension"/>
+    </declare-styleable>
+    <declare-styleable name="RibbonTagListView">
+        <attr name="item_space" format="integer"/>
     </declare-styleable>
 </resources>
