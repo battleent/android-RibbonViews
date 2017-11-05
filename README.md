@@ -69,7 +69,18 @@ bottom_padding | int | 3 | set bottom ribbon's paddings
                     app:tag_ribbonColor="#cdda0b23"/>
 ```
 
+## RibbonTagListView
+```xml
+<com.battleent.ribbonviews.RibbonTagListView
+                    android:id="@+id/ribbonTagListView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="3dp"
+                    app:item_space="10"/>
+```
+
 ## Version Log
+#### v1.0.2 - Updated RibbonTagListView
 #### v1.0.1 - Updated RibbonTag
 
 # License
