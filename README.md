@@ -11,7 +11,8 @@ dependencies {
 }
 ```
 
-## RibbonLayout
+## Usage
+### RibbonLayout
 ```xml
 <com.battleent.ribbonviews.RibbonLayout
                 android:layout_width="132dp"
@@ -39,7 +40,7 @@ dependencies {
             </com.battleent.ribbonviews.RibbonLayout>
 ```
 
-## Attributes
+#### Attributes
 Parameter  |  Format  |  Default  |  Description
 --- | --- | --- | ---
 show_header | Boolean | true | set header ribbon's visibility
@@ -56,7 +57,7 @@ bottom_textColor | color | Color.White | set bottom ribbin's textColor
 bottom_height | int | -1 | set bottom ribbin's height
 bottom_padding | int | 3 | set bottom ribbon's paddings
 
-## RibbonTag
+### RibbonTag
 ```xml
 <com.battleent.ribbonviews.RibbonTag
                     android:layout_width="wrap_content"
@@ -69,7 +70,7 @@ bottom_padding | int | 3 | set bottom ribbon's paddings
                     app:tag_ribbonColor="#cdda0b23"/>
 ```
 
-## RibbonTagListView
+### RibbonTagListView
 ```xml
 <com.battleent.ribbonviews.RibbonTagListView
                     android:id="@+id/ribbonTagListView"
