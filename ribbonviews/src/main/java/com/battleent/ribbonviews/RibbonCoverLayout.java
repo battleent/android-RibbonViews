@@ -107,6 +107,8 @@ public class RibbonCoverLayout extends RelativeLayout {
 
         if(!cover_visibility)
             cover.setVisibility(View.GONE);
+        else
+            cover.setVisibility(View.VISIBLE);
 
         cover.setBackgroundColor(cover_color);
         cover.setAlpha(cover_alpha);
@@ -114,7 +116,8 @@ public class RibbonCoverLayout extends RelativeLayout {
         cover_text.setText(cover_textContent);
         cover_text.setTextSize(cover_textSize);
         cover_text.setTextColor(cover_textColor);
-        cover.addView(cover_text);
+        if(cover_text.getParent() == null)
+            cover.addView(cover_text);
         RelativeLayout.LayoutParams layoutParams_text = (RelativeLayout.LayoutParams)cover_text.getLayoutParams();
         layoutParams_text.addRule(RelativeLayout.CENTER_IN_PARENT, RelativeLayout.TRUE);
         cover_text.setLayoutParams(layoutParams_text);
@@ -124,8 +127,6 @@ public class RibbonCoverLayout extends RelativeLayout {
     private void removeCover() {
         if(cover != null)
             removeView(cover);
-        if(cover_text != null)
-            removeView(cover_text);
     }
 
     public void setCoverText(String text) {
