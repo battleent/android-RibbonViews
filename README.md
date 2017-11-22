@@ -7,7 +7,7 @@ This is an android view library "RibbonViews" by [Battle Entertainment](https://
 #### Gradle
 ```java
 dependencies {
-    compile 'com.github.battleent:RibbonViews:1.0.3
+    compile 'com.github.battleent:RibbonViews:1.0.7
 }
 ```
 
@@ -99,7 +99,7 @@ bottom_padding | int | 3 | set bottom ribbon's paddings
 ```
 
 ## Version Log
-- v1.0.3 - Updated RibbonCoverLayout
+- v1.0.7 - Updated RibbonCoverLayout
 - v1.0.2 - Updated RibbonTagListView
 - v1.0.1 - Updated RibbonTag
 
