@@ -19,7 +19,7 @@
             android:padding="10dp"
             android:layout_margin="5dp"
             app:cardCornerRadius="3dp"
-            app:cardElevation="5dp">
+            app:cardElevation="3dp">
 
             <com.battleent.ribbonviews.RibbonLayout
                 android:layout_width="132dp"
@@ -96,7 +96,7 @@
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="15dp">
+        android:layout_marginTop="4dp">
 
         <android.support.v7.widget.CardView
             android:id="@+id/card1"
@@ -106,7 +106,7 @@
             android:padding="10dp"
             android:layout_margin="5dp"
             app:cardCornerRadius="3dp"
-            app:cardElevation="5dp">
+            app:cardElevation="3dp">
 
             <com.battleent.ribbonviews.RibbonLayout
                 android:layout_width="132dp"
@@ -185,7 +185,7 @@
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="15dp">
+        android:layout_marginTop="5dp">
 
         <android.support.v7.widget.CardView
             android:id="@+id/card2"
@@ -193,23 +193,60 @@
             android:layout_height="wrap_content"
             android:clipToPadding="false"
             app:cardCornerRadius="3dp"
-            app:cardElevation="5dp"
+            app:cardElevation="3dp"
             android:padding="10dp"
             android:layout_margin="5dp"
             android:layout_centerInParent="true">
 
             <com.battleent.ribbonviews.RibbonLayout
-                android:layout_width="200dp"
-                android:layout_height="140dp"
+                android:layout_width="180dp"
+                android:layout_height="119dp"
                 app:header_text="New"
                 app:header_ribbonColor="#df1f76"
                 app:header_ribbonRadius="6"
                 app:header_textSize="15"
                 app:header_padding="8"
                 app:bottom_text="Today is free"
-                app:bottom_textSize="15"
+                app:bottom_textSize="12"
                 app:bottom_ribbonColor="#e5c572d3"
-                app:bottom_padding="17">
+                app:bottom_padding="15">
+
+                <ImageView
+                    android:layout_width="200dp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_marginBottom="14dp"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/thumbnail0" />
+
+            </com.battleent.ribbonviews.RibbonLayout>
+        </android.support.v7.widget.CardView>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp">
+
+        <android.support.v7.widget.CardView
+            android:id="@+id/card3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:clipToPadding="false"
+            app:cardCornerRadius="3dp"
+            app:cardElevation="3dp"
+            android:padding="10dp"
+            android:layout_margin="5dp"
+            android:layout_centerInParent="true">
+
+            <com.battleent.ribbonviews.RibbonCoverLayout
+                android:layout_width="180dp"
+                android:layout_height="119dp"
+                app:cover_color="@color/cover"
+                app:cover_text="expired"
+                app:cover_textSize="23">
 
                 <ImageView
                     android:layout_width="200dp"
@@ -217,8 +254,10 @@
                     android:scaleType="fitXY"
                     android:src="@drawable/thumbnail0"/>
 
-            </com.battleent.ribbonviews.RibbonLayout>
+            </com.battleent.ribbonviews.RibbonCoverLayout>
         </android.support.v7.widget.CardView>
     </RelativeLayout>
+
+
 
 </LinearLayout>

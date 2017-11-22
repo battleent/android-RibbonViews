@@ -29,4 +29,11 @@
     <declare-styleable name="RibbonTagListView">
         <attr name="item_space" format="integer"/>
     </declare-styleable>
+    <declare-styleable name="RibbonCoverLayout">
+        <attr name="cover_color" format="color"/>
+        <attr name="cover_alpha" format="float"/>
+        <attr name="cover_text" format="string"/>
+        <attr name="cover_textSize" format="integer"/>
+        <attr name="cover_textColor" format="color"/>
+    </declare-styleable>
 </resources>
