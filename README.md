@@ -7,7 +7,7 @@ This is an android view library "RibbonViews" by [Battle Entertainment](https://
 #### Gradle
 ```java
 dependencies {
-    compile 'com.github.battleent:RibbonViews:1.0.2
+    compile 'com.github.battleent:RibbonViews:1.0.3
 }
 ```
 
@@ -80,9 +80,28 @@ bottom_padding | int | 3 | set bottom ribbon's paddings
                     app:item_space="10"/>
 ```
 
+### RibbonCoverLayout
+```xml
+<com.battleent.ribbonviews.RibbonCoverLayout
+                android:layout_width="180dp"
+                android:layout_height="119dp"
+                app:cover_color="@color/cover"
+                app:cover_text="expired"
+                app:cover_textSize="23"
+                app:cover_textColor="@android:color/white">
+
+                <ImageView
+                    android:layout_width="200dp"
+                    android:layout_height="wrap_content"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/thumbnail0"/>
+            </com.battleent.ribbonviews.RibbonCoverLayout>
+```
+
 ## Version Log
-#### v1.0.2 - Updated RibbonTagListView
-#### v1.0.1 - Updated RibbonTag
+- v1.0.3 - Updated RibbonCoverLayout
+- v1.0.2 - Updated RibbonTagListView
+- v1.0.1 - Updated RibbonTag
 
 # License
 ```xml
