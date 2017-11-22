@@ -29,6 +29,7 @@ import android.content.res.TypedArray;
 import android.graphics.Color;
 import android.support.v4.content.ContextCompat;
 import android.util.AttributeSet;
+import android.view.View;
 import android.widget.RelativeLayout;
 import android.widget.TextView;
 
@@ -37,6 +38,7 @@ public class RibbonCoverLayout extends RelativeLayout {
     private RelativeLayout cover;
     private TextView cover_text;
 
+    private boolean cover_visibility = true;
     private int cover_color = ContextCompat.getColor(getContext(), R.color.cover);
     private float cover_alpha = 1.0f;
 
@@ -85,6 +87,7 @@ public class RibbonCoverLayout extends RelativeLayout {
     }
 
     private void setTypeArray(TypedArray typeArray) {
+        cover_visibility = typeArray.getBoolean(R.styleable.RibbonCoverLayout_cover_visibility, cover_visibility);
         cover_color = typeArray.getColor(R.styleable.RibbonCoverLayout_cover_color, cover_color);
         cover_alpha = typeArray.getFloat(R.styleable.RibbonCoverLayout_cover_alpha, cover_alpha);
 
@@ -101,6 +104,9 @@ public class RibbonCoverLayout extends RelativeLayout {
 
     private void updateCover() {
         removeCover();
+
+        if(!cover_visibility)
+            cover.setVisibility(View.GONE);
 
         cover.setBackgroundColor(cover_color);
         cover.setAlpha(cover_alpha);
@@ -123,6 +129,12 @@ public class RibbonCoverLayout extends RelativeLayout {
     }
 
     public void setCoverText(String text) {
-        this.cover_text.setText(text);
+        this.cover_textContent = text;
+        updateCover();
+    }
+
+    public void setCoverVisibility(boolean visibility) {
+        cover_visibility = visibility;
+        updateCover();
     }
 }

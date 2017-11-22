@@ -30,6 +30,7 @@
         <attr name="item_space" format="integer"/>
     </declare-styleable>
     <declare-styleable name="RibbonCoverLayout">
+        <attr name="cover_visibility" format="boolean"/>
         <attr name="cover_color" format="color"/>
         <attr name="cover_alpha" format="float"/>
         <attr name="cover_text" format="string"/>
