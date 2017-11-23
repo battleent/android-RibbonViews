@@ -93,6 +93,9 @@ bottom_padding | int | 3 | set bottom ribbon's paddings
                 app:cover_text="expired"
                 app:cover_textSize="23"
                 app:cover_textColor="@android:color/white">
+    
+                <!-- or set custom layout on cover -->
+                <!-- app:cover="@layout/layout_cover"  -->
 
                 <ImageView
                     android:layout_width="200dp"
