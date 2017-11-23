@@ -11,7 +11,7 @@ This is an android view library "RibbonViews" by [Battle Entertainment](https://
 #### Gradle
 ```java
 dependencies {
-    compile 'com.github.battleent:RibbonViews:1.0.7
+    compile 'com.github.battleent:RibbonViews:1.0.8
 }
 ```
 
@@ -93,6 +93,9 @@ bottom_padding | int | 3 | set bottom ribbon's paddings
                 app:cover_text="expired"
                 app:cover_textSize="23"
                 app:cover_textColor="@android:color/white">
+    
+                <!-- or set custom layout on cover -->
+                <!-- app:cover="@layout/layout_cover"  -->
 
                 <ImageView
                     android:layout_width="200dp"
@@ -102,7 +105,25 @@ bottom_padding | int | 3 | set bottom ribbon's paddings
             </com.battleent.ribbonviews.RibbonCoverLayout>
 ```
 
+### RibbonFickleCoverLayout
+<com.battleent.ribbonviews.RibbonFickleCoverLayout
+                android:id="@+id/ribbonCoverLayout"
+                android:layout_width="180dp"
+                android:layout_height="119dp"
+                app:fickle_cover="@layout/layout_cover"
+                app:fickle_cover_second="@layout/layout_cover_second"
+                app:fickle_delay="1000">
+
+                <ImageView
+                    android:layout_width="200dp"
+                    android:layout_height="wrap_content"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/thumbnail0"/>
+
+            </com.battleent.ribbonviews.RibbonFickleCoverLayout>
+
 ## Version Log
+- v1.0.8 - Updated RibbonFickleCoverLayout
 - v1.0.7 - Updated RibbonCoverLayout
 - v1.0.2 - Updated RibbonTagListView
 - v1.0.1 - Updated RibbonTag
