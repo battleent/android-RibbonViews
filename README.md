@@ -106,6 +106,7 @@ bottom_padding | int | 3 | set bottom ribbon's paddings
 ```
 
 ### RibbonFickleCoverLayout
+```xml
 <com.battleent.ribbonviews.RibbonFickleCoverLayout
                 android:id="@+id/ribbonCoverLayout"
                 android:layout_width="180dp"
@@ -121,6 +122,7 @@ bottom_padding | int | 3 | set bottom ribbon's paddings
                     android:src="@drawable/thumbnail0"/>
 
             </com.battleent.ribbonviews.RibbonFickleCoverLayout>
+```
 
 ## Version Log
 - v1.0.8 - Updated RibbonFickleCoverLayout
