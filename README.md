@@ -1,7 +1,11 @@
 # RibbonViews
 This is an android view library "RibbonViews" by [Battle Entertainment](https://www.battleent.com/)
 
-![screenshot](https://user-images.githubusercontent.com/24237865/33116641-ea4b1526-cfa8-11e7-8552-5401c6db2607.png)
+![screenshot](https://user-images.githubusercontent.com/24237865/33116641-ea4b1526-cfa8-11e7-8552-5401c6db2607.png) <br>
+
+## BattleComics Preview
+![scrennshot00](https://user-images.githubusercontent.com/24237865/33155980-a27600b8-d038-11e7-9043-adfd608d9b97.png)
+![screenshot01](https://user-images.githubusercontent.com/24237865/33155979-a24b102e-d038-11e7-8eac-bea1296687f2.png)
 
 ## Download
 #### Gradle
