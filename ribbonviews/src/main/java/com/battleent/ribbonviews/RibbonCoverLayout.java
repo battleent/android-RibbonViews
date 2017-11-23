@@ -29,6 +29,7 @@ import android.content.res.TypedArray;
 import android.graphics.Color;
 import android.support.v4.content.ContextCompat;
 import android.util.AttributeSet;
+import android.view.LayoutInflater;
 import android.view.View;
 import android.widget.RelativeLayout;
 import android.widget.TextView;
@@ -38,6 +39,7 @@ public class RibbonCoverLayout extends RelativeLayout {
     private RelativeLayout cover;
     private TextView cover_text;
 
+    private int cover_layout = -1;
     private boolean cover_visibility = true;
     private int cover_color = ContextCompat.getColor(getContext(), R.color.cover);
     private float cover_alpha = 1.0f;
@@ -87,6 +89,7 @@ public class RibbonCoverLayout extends RelativeLayout {
     }
 
     private void setTypeArray(TypedArray typeArray) {
+        cover_layout = typeArray.getResourceId(R.styleable.RibbonCoverLayout_cover, cover_layout);
         cover_visibility = typeArray.getBoolean(R.styleable.RibbonCoverLayout_cover_visibility, cover_visibility);
         cover_color = typeArray.getColor(R.styleable.RibbonCoverLayout_cover_color, cover_color);
         cover_alpha = typeArray.getFloat(R.styleable.RibbonCoverLayout_cover_alpha, cover_alpha);
@@ -110,18 +113,28 @@ public class RibbonCoverLayout extends RelativeLayout {
         else
             cover.setVisibility(View.VISIBLE);
 
-        cover.setBackgroundColor(cover_color);
-        cover.setAlpha(cover_alpha);
-        cover.setLayoutParams(new LayoutParams(LayoutParams.MATCH_PARENT, LayoutParams.MATCH_PARENT));
-        cover_text.setText(cover_textContent);
-        cover_text.setTextSize(cover_textSize);
-        cover_text.setTextColor(cover_textColor);
-        if(cover_text.getParent() == null)
-            cover.addView(cover_text);
-        RelativeLayout.LayoutParams layoutParams_text = (RelativeLayout.LayoutParams)cover_text.getLayoutParams();
-        layoutParams_text.addRule(RelativeLayout.CENTER_IN_PARENT, RelativeLayout.TRUE);
-        cover_text.setLayoutParams(layoutParams_text);
-        addView(cover);
+        if(cover_layout == -1) {
+            cover.setBackgroundColor(cover_color);
+            cover.setAlpha(cover_alpha);
+            cover.setLayoutParams(new LayoutParams(LayoutParams.MATCH_PARENT, LayoutParams.MATCH_PARENT));
+            cover_text.setText(cover_textContent);
+            cover_text.setTextSize(cover_textSize);
+            cover_text.setTextColor(cover_textColor);
+            if (cover_text.getParent() == null)
+                cover.addView(cover_text);
+            RelativeLayout.LayoutParams layoutParams_text = (RelativeLayout.LayoutParams) cover_text.getLayoutParams();
+            layoutParams_text.addRule(RelativeLayout.CENTER_IN_PARENT, RelativeLayout.TRUE);
+            cover_text.setLayoutParams(layoutParams_text);
+            addView(cover);
+        } else {
+            LayoutInflater inflater = (LayoutInflater) getContext().getSystemService(Context.LAYOUT_INFLATER_SERVICE);
+
+            if(inflater != null) {
+                View view = inflater.inflate(cover_layout, null);
+                view.setLayoutParams(new LayoutParams(LayoutParams.MATCH_PARENT, LayoutParams.MATCH_PARENT));
+                addView(view);
+            }
+        }
     }
 
     private void removeCover() {
@@ -136,6 +149,11 @@ public class RibbonCoverLayout extends RelativeLayout {
 
     public void setCoverVisibility(boolean visibility) {
         cover_visibility = visibility;
+        updateCover();
+    }
+
+    public void setCoverLayout(int id) {
+        this.cover_layout = id;
         updateCover();
     }
 }
