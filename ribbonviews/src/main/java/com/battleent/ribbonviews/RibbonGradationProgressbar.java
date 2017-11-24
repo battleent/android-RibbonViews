@@ -40,7 +40,7 @@ public class RibbonGradationProgressbar extends ProgressBar {
     }
 
     private void onCreate() {
-        label = "50% 소장";
+        label = "50%";
         labelPaint = new Paint();
         labelPaint.setColor(Color.WHITE);
         labelPaint.setTextSize(getSpTextSize(12));
@@ -82,6 +82,7 @@ public class RibbonGradationProgressbar extends ProgressBar {
 
         float progressWidth = (float)getProgress() * ((float)getWidth() / 100);
         if(bound.width() + dpToPx(threshHold)*2 < progressWidth) {
+            labelPaint.setColor(Color.WHITE);
             float x = progressWidth - bound.width() - dpToPx(threshHold);
             int y = getHeight() / 2 - bound.centerY();
             canvas.drawText(label, x, y, labelPaint);
