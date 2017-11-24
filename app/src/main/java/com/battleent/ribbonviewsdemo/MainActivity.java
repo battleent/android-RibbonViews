@@ -4,6 +4,7 @@ import android.os.Bundle;
 import android.support.v4.content.ContextCompat;
 import android.support.v7.app.AppCompatActivity;
 
+import com.battleent.ribbonviews.RibbonGradationProgressbar;
 import com.battleent.ribbonviews.RibbonTagItem;
 import com.battleent.ribbonviews.RibbonTagListView;
 
