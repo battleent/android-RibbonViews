@@ -11,7 +11,7 @@ This is an android view library "RibbonViews" by [Battle Entertainment](https://
 #### Gradle
 ```java
 dependencies {
-    compile 'com.github.battleent:RibbonViews:1.0.8
+    compile 'com.github.battleent:RibbonViews:1.0.9
 }
 ```
 
@@ -124,7 +124,15 @@ bottom_padding | int | 3 | set bottom ribbon's paddings
             </com.battleent.ribbonviews.RibbonFickleCoverLayout>
 ```
 
+### RibbonGradationProgressbar
+```java
+RibbonGradationProgressbar progress = findViewById(R.id.progress);
+progress.setProgress(65);
+progress.setLabel("progress 50%");
+```
+
 ## Version Log
+- v1.0.9 - Updated RibbonGradationProgressbar
 - v1.0.8 - Updated RibbonFickleCoverLayout
 - v1.0.7 - Updated RibbonCoverLayout
 - v1.0.2 - Updated RibbonTagListView
