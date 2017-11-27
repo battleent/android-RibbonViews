@@ -29,6 +29,7 @@ import android.content.res.TypedArray;
 import android.util.AttributeSet;
 import android.view.LayoutInflater;
 import android.view.View;
+import android.view.ViewGroup;
 import android.view.animation.TranslateAnimation;
 import android.widget.RelativeLayout;
 
@@ -85,6 +86,27 @@ public class RibbonFickleCoverLayout extends RelativeLayout {
     @Override
     protected void onFinishInflate() {
         super.onFinishInflate();
+
+        if(getChildCount() > 0) {
+            if(getChildAt(0) instanceof ViewGroup) {
+                ViewGroup childLayout = (ViewGroup) getChildAt(0);
+                childLayout.post(new Runnable() {
+                    @Override
+                    public void run() {
+                        updateCover();
+                    }
+                });
+
+                if(childLayout.getChildCount() > 0) {
+                    childLayout.getChildAt(0).post(new Runnable() {
+                        @Override
+                        public void run() {
+                            updateCover();
+                        }
+                    });
+                }
+            }
+        }
         updateCover();
     }
 
