@@ -42,5 +42,6 @@
         <attr name="fickle_cover" format="reference"/>
         <attr name="fickle_cover_second" format="reference"/>
         <attr name="fickle_delay" format="integer"/>
+        <attr name="fickle_visibility" format="boolean"/>
     </declare-styleable>
 </resources>

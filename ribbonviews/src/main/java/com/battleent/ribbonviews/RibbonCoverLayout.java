@@ -131,6 +131,12 @@ public class RibbonCoverLayout extends RelativeLayout {
 
             if(inflater != null) {
                 View view = inflater.inflate(cover_layout, null);
+
+                if(!cover_visibility)
+                    view.setVisibility(View.GONE);
+                else
+                    view.setVisibility(View.VISIBLE);
+
                 view.setLayoutParams(new LayoutParams(LayoutParams.MATCH_PARENT, LayoutParams.MATCH_PARENT));
                 addView(view);
             }

@@ -226,7 +226,7 @@
     </RelativeLayout>
 
     <com.battleent.ribbonviews.RibbonFickleCoverLayout
-        android:id="@+id/ribbonCoverLayout"
+        android:id="@+id/ribbonFickleCoverLayout"
         android:layout_width="180dp"
         android:layout_height="119dp"
         android:layout_gravity="center_horizontal"

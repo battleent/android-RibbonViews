@@ -41,9 +41,11 @@ public class RibbonFickleCoverLayout extends RelativeLayout {
     private int cover_id = -1;
     private int cover_second_id = -1;
 
+    private boolean cover_visibility = true;
     private boolean isAnimatied = false;
-
     private int duration = 1000;
+
+    private OnClickListener secondCoverListener;
 
     public RibbonFickleCoverLayout(Context context) {
         super(context);
@@ -113,6 +115,20 @@ public class RibbonFickleCoverLayout extends RelativeLayout {
     private void updateCover() {
         removeCover();
 
+        if(cover != null) {
+            if (!cover_visibility)
+                cover.setVisibility(View.GONE);
+            else
+                cover.setVisibility(View.VISIBLE);
+        }
+
+        if(cover_second != null) {
+            if (!cover_visibility)
+                cover_second.setVisibility(View.GONE);
+            else
+                cover_second.setVisibility(View.VISIBLE);
+        }
+
         LayoutInflater inflater = (LayoutInflater) getContext().getSystemService(Context.LAYOUT_INFLATER_SERVICE);
         if(inflater != null) {
             if(cover_id != -1) {
@@ -126,6 +142,9 @@ public class RibbonFickleCoverLayout extends RelativeLayout {
                 cover_second = inflater.inflate(cover_second_id, null);
                 cover_second.setLayoutParams(new LayoutParams(LayoutParams.MATCH_PARENT, LayoutParams.MATCH_PARENT));
                 addView(cover_second);
+                if(secondCoverListener != null)
+                    cover_second.setOnClickListener(secondCoverListener);
+
                 cover_second.post(new Runnable() {
                     @Override
                     public void run() {
@@ -158,6 +177,12 @@ public class RibbonFickleCoverLayout extends RelativeLayout {
                                 animation_cover.setFillEnabled(true);
                                 animation_cover.setFillAfter(true);
                                 cover.startAnimation(animation_cover);
+
+                                cover_Listener = null;
+                                cover.setOnClickListener(null);
+                                cover.setFocusable(false);
+                                cover.setClickable(false);
+                                cover_second.requestFocus();
                             }
                         });
                     }
@@ -179,6 +204,11 @@ public class RibbonFickleCoverLayout extends RelativeLayout {
         }
     }
 
+    public void setCoverVisibility(boolean visibility) {
+        cover_visibility = visibility;
+        updateCover();
+    }
+
     public void setCoverLayout(int id) {
         this.cover_id = id;
         updateCover();
@@ -191,6 +221,7 @@ public class RibbonFickleCoverLayout extends RelativeLayout {
 
     public void setCoverSecondClickListener(OnClickListener onClickListener) {
         if(cover_second != null ) {
+            this.secondCoverListener = onClickListener;
             this.cover_second.setOnClickListener(onClickListener);
         }
     }
