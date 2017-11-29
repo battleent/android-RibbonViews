@@ -131,14 +131,9 @@ public class RibbonCoverLayout extends RelativeLayout {
 
             if(inflater != null) {
                 View view = inflater.inflate(cover_layout, null);
-
-                if(!cover_visibility)
-                    view.setVisibility(View.GONE);
-                else
-                    view.setVisibility(View.VISIBLE);
-
-                view.setLayoutParams(new LayoutParams(LayoutParams.MATCH_PARENT, LayoutParams.MATCH_PARENT));
-                addView(view);
+                cover = (RelativeLayout) view;
+                cover.setLayoutParams(new LayoutParams(LayoutParams.MATCH_PARENT, LayoutParams.MATCH_PARENT));
+                addView(cover);
             }
         }
     }
@@ -161,5 +156,9 @@ public class RibbonCoverLayout extends RelativeLayout {
     public void setCoverLayout(int id) {
         this.cover_layout = id;
         updateCover();
+    }
+
+    public View getCover() {
+        return cover;
     }
 }

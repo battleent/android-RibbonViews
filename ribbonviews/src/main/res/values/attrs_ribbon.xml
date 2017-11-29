@@ -44,4 +44,16 @@
         <attr name="fickle_delay" format="integer"/>
         <attr name="fickle_visibility" format="boolean"/>
     </declare-styleable>
+    <declare-styleable name="RibbonEditText">
+        <attr name="editText_paddingTop" format="integer"/>
+        <attr name="editText_ribbonLeftPadding" format="integer"/>
+        <attr name="editText_ribbonText" format="string"/>
+        <attr name="editText_ribbonSize" format="integer"/>
+        <attr name="editText_ribbonColor" format="color"/>
+        <attr name="editText_editHint" format="string"/>
+        <attr name="editText_editSize" format="integer"/>
+        <attr name="editText_editHintColor" format="color"/>
+        <attr name="editText_editColor" format="color"/>
+        <attr name="editText_ribbonFocusColor" format="color"/>
+    </declare-styleable>
 </resources>

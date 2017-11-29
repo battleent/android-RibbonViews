@@ -9,4 +9,7 @@
     <color name="bright_lavender">#e254ff</color>
     <color name="md_light_blue_A700">#0091EA</color>
     <color name="cover">#99000000</color>
+    <color name="black_38">#60000000</color>
+    <color name="black_54">#89000000</color>
+    <color name="black_87">#dd000000</color>
 </resources>
