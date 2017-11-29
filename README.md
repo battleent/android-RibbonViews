@@ -132,7 +132,7 @@ progress.setLabel("progress 50%");
 ```
 
 ### RibbonEditText
-```java
+```xml
    <com.battleent.ribbonviews.RibbonFickleCoverLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
