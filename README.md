@@ -11,7 +11,7 @@ This is an android view library "RibbonViews" by [Battle Entertainment](https://
 #### Gradle
 ```java
 dependencies {
-    compile 'com.github.battleent:RibbonViews:1.1.2
+    compile 'com.github.battleent:RibbonViews:1.1.4
 }
 ```
 
@@ -131,7 +131,25 @@ progress.setProgress(65);
 progress.setLabel("progress 50%");
 ```
 
+### RibbonEditText
+```java
+   <com.battleent.ribbonviews.RibbonFickleCoverLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:editText_paddingTop="10"
+        app:editText_ribbonLeftPadding="10"
+        app:editText_ribbonText="password"
+        app:editText_ribbonColor="@color/black_87"
+        app:editText_ribbonFocusColor="@color/colorPrimary"
+        app:editText_ribbonSize="15"
+        app:editText_editColor="@color/black_87"
+        app:editText_editHintColor="@color/black_54"
+        app:editText_editSize="15"
+        app:editText_editHint="type password"/>
+```
+
 ## Version Log
+- v1.1.4 - Updated RibbonEditText
 - v1.0.9 - Updated RibbonGradationProgressbar
 - v1.0.8 - Updated RibbonFickleCoverLayout
 - v1.0.7 - Updated RibbonCoverLayout
