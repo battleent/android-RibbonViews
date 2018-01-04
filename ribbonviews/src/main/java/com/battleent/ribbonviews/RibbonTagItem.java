@@ -39,6 +39,8 @@ public class RibbonTagItem {
     private int padding_right = 16;
     private int padding_bottom = 2;
 
+    private int textSize = 9;
+
     public RibbonTagItem(String text) {
         this.ribbonText = text;
     }
@@ -73,6 +75,10 @@ public class RibbonTagItem {
         this.padding_bottom = bottom;
     }
 
+    public void setTextSize(int size) {
+        this.textSize = size;
+    }
+
     public String getTagText() {
         return this.ribbonText;
     }
@@ -99,5 +105,9 @@ public class RibbonTagItem {
 
     public int getPadding_bottom() {
         return this.padding_bottom;
+    }
+
+    public int getTextSize() {
+        return this.textSize;
     }
 }

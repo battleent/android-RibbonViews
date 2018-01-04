@@ -28,6 +28,7 @@
     </declare-styleable>
     <declare-styleable name="RibbonTagListView">
         <attr name="item_space" format="integer"/>
+        <attr name="item_textSize" format="integer"/>
     </declare-styleable>
     <declare-styleable name="RibbonCoverLayout">
         <attr name="cover" format="reference"/>

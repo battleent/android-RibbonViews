@@ -35,7 +35,7 @@ import android.widget.TextView;
 public class RibbonTag extends TextView {
 
     private int tag_textColor = Color.WHITE;
-    private int tag_textSize = 11;
+    private int tag_textSize = 10;
     private int ribbonColor = getContext().getResources().getColor(R.color.bright_lavender);
     private int ribbonRadius= 10;
     private float padding_left = 6;

@@ -68,6 +68,7 @@ public class RibbonTagListView extends RecyclerView implements IRibbonItem<Ribbo
 
     private void getAttrs(AttributeSet attributeSet, int defStyleAttr) {
         TypedArray typedArray = getContext().obtainStyledAttributes(attributeSet, R.styleable.RibbonTagListView, defStyleAttr, 0);
+
         try {
             setTypeArray(typedArray);
         } finally {

@@ -69,6 +69,7 @@ public class RibbonTagAdapter extends RecyclerView.Adapter<RibbonTagViewHolder> 
         viewHolder.ribbonTag.setTagTextColor(item.getTagTextColor());
         viewHolder.ribbonTag.setRibbonColor(item.getRibbonColor());
         viewHolder.ribbonTag.setPadding(item.getPadding_left(), item.getPadding_top(), item.getPadding_right(), item.getPadding_bottom());
+        viewHolder.ribbonTag.setTextSize(item.getTextSize());
     }
 
     @Override

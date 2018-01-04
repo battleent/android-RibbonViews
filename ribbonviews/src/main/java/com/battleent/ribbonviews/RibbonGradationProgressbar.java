@@ -7,6 +7,7 @@ import android.graphics.Canvas;
 import android.graphics.Color;
 import android.graphics.Paint;
 import android.graphics.Rect;
+import android.graphics.Typeface;
 import android.util.AttributeSet;
 import android.util.DisplayMetrics;
 import android.util.TypedValue;
@@ -65,11 +66,10 @@ public class RibbonGradationProgressbar extends ProgressBar {
     }
 
     private void setTypeArray(TypedArray typeArray) {
-        //   header_text = typeArray.getString(R.styleable.RibbonLayout_header_text);
     }
 
     private float getSpTextSize(int size) {
-        return TypedValue.applyDimension(TypedValue.COMPLEX_UNIT_SP,size, getResources().getDisplayMetrics());
+        return TypedValue.applyDimension(TypedValue.COMPLEX_UNIT_SP, size, getResources().getDisplayMetrics());
     }
 
     @Override
@@ -83,6 +83,7 @@ public class RibbonGradationProgressbar extends ProgressBar {
         float progressWidth = (float)getProgress() * ((float)getWidth() / 100);
         if(bound.width() + dpToPx(threshHold)*2 < progressWidth) {
             labelPaint.setColor(Color.WHITE);
+            labelPaint.setTypeface(Typeface.create(Typeface.DEFAULT, Typeface.BOLD));
             float x = progressWidth - bound.width() - dpToPx(threshHold);
             int y = getHeight() / 2 - bound.centerY();
             canvas.drawText(label, x, y, labelPaint);
