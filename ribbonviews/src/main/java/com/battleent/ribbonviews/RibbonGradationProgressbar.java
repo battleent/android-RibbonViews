@@ -79,11 +79,11 @@ public class RibbonGradationProgressbar extends ProgressBar {
 
         Rect bound = new Rect();
         labelPaint.getTextBounds(label, 0, label.length(), bound);
+        labelPaint.setTypeface(Typeface.create(Typeface.DEFAULT, Typeface.BOLD));
 
         float progressWidth = (float)getProgress() * ((float)getWidth() / 100);
         if(bound.width() + dpToPx(threshHold)*2 < progressWidth) {
             labelPaint.setColor(Color.WHITE);
-            labelPaint.setTypeface(Typeface.create(Typeface.DEFAULT, Typeface.BOLD));
             float x = progressWidth - bound.width() - dpToPx(threshHold);
             int y = getHeight() / 2 - bound.centerY();
             canvas.drawText(label, x, y, labelPaint);
