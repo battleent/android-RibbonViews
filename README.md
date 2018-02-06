@@ -1,4 +1,7 @@
 # RibbonViews
+![license](https://img.shields.io/badge/license-MIT%20License-blue.svg)
+[![Build Status](https://travis-ci.org/battleent/android-RibbonViews.svg?branch=master)](https://travis-ci.org/battleent/android-RibbonViews) <br>
+
 This is an android view library "RibbonViews" by [Battle Entertainment](https://www.battleent.com/)
 
 ![screenshot](https://user-images.githubusercontent.com/24237865/33116641-ea4b1526-cfa8-11e7-8552-5401c6db2607.png) <br>
