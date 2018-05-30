@@ -14,7 +14,7 @@ This is an android view library "RibbonViews" by [Battle Entertainment](https://
 #### Gradle
 ```java
 dependencies {
-    compile 'com.github.battleent:RibbonViews:1.1.6
+    compile 'com.github.battleent:RibbonViews:1.1.6'
 }
 ```
 
