@@ -4,11 +4,14 @@
 [ ![Download](https://api.bintray.com/packages/battleent/maven/RibbonViews/images/download.svg) ](https://bintray.com/battleent/maven/RibbonViews/_latestVersion)
 <br>
 
-![screenshot1765018834](https://user-images.githubusercontent.com/24237865/45553709-90802d00-b86f-11e8-890c-22a2b05b7ae0.png) <br>
+![screenshot1645545604](https://user-images.githubusercontent.com/27774870/51260708-3dbbab00-19f2-11e9-9948-84644f88281a.png) <br>
 
 <p align="center">
-    :purple_heart: Thank you for download 3200+ :purple_heart:
+    :purple_heart: Thank you for download 3500+ :purple_heart:
 </p>
+
+## Tutorial
+[Youtube Android Studio Tutorial - Ribbon Layout](https://www.youtube.com/watch?v=8HQ_PDUDJ4k)
 
 ## Demo
 This is an android view library "RibbonViews" by [Battle Entertainment](https://www.battleent.com/)
